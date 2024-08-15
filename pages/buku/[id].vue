@@ -11,11 +11,12 @@
               </div>
           </div>
           <div class="col-md-6">
+            <img src="~/assets/img/h.png" alt="buku 1" height="100px" width="100px">
               <ul class="list-group list-group-flush">
-                  <li class="list-group-item">penulis : {{  buku.penulis }}</li>
-                  <li class="list-group-item">tahun_terbit : {{  buku.tahun_terbit }}</li>
-                  <li class="list-group-item">rak : {{ buku.rak }}</li>
-                  <li class=" list-group-item">deskripsi : {{ buku.deskripsi }}</li>
+                  <li class="list-group-item">penulis :andrea{{  buku.penulis }}</li>
+                  <li class="list-group-item">tahun_terbit : 2015{{  buku.tahun_terbit }}</li>
+                  <li class="list-group-item">rak :1 {{ buku.rak }}</li>
+                  <li class=" list-group-item">deskripsi : persahabatan antara tiga orang kawan, yakni Sabari, Ukun, dan Tamat.  {{ buku.deskripsi }}</li>
               </ul>
           </div>
       </div>

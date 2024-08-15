@@ -17,23 +17,23 @@
                           <h2>Cari Buku</h2>
                       </div>
                   </div>
-              </nuxt-link>
+            </nuxt-link>
           </div>
       </div>
   </div>
-  <h2 style="margin: 30px"><strong>STATISTIK</strong></h2>
+  <h2 style="margin: 30px"><strong> STATISTIK </strong></h2>
 <div class="Container-fluid">
   <div class="row justify-content-evenly rounded-3">
     <div class="col-5">
       <div class="card1">
         <div class="raccing">
-          <h2><span class="no">{{ jml_pengunjung }}</span> pengunjung</h2>
+          <h2><span class="no">{{ jml_pengunjung }}</span> pengunjung </h2>
         </div>
       </div>
     </div>
     <div class="col-5">
       <div class="raccing1">
-        <h2><span class="no">{{ jml_buku }}</span> Buku</h2>
+        <h2><span class="no">{{ jml_buku }}</span> Buku </h2>
       </div>
     </div>
   </div>
@@ -41,11 +41,12 @@
     <statistik/>
   </div>
 </div>
+
 </template>
 <script setup>
   const supabase = useSupabaseClient()
-  const jml_pengunjung = ref(0)
-  const jml_buku = ref(0)
+  const jml_pengunjung = ref( 3 )
+  const jml_buku = ref( 8 )
 
   async function getjml_pengunjung() {
   const{ error , data, count } = await supabase
@@ -72,16 +73,16 @@
 <style scoped>
 .card {
   height: 250px;
-  box-shadow: 1px 1px 10px #424242;
+  box-shadow: 1px 1px 10px #d9ce3b;
 }
 .card.bg-pengunjung {
-  background-image: url('../assets/img/bg-home-cari-buku.jpg');
+  background-image: url('../assets/img/kunjungan.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .card.bg-buku {
-  background: url('../assets/img/kunjungan.jpeg') no-repeat center center;
+  background: url('../assets/img/bg-home-cari-buku.jpg') no-repeat center center;
   background-size: cover;
 }
 .raccing {
@@ -91,7 +92,7 @@ border-radius: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:   #697408;
+background-color:   #d8eb2c;
 }
 .raccing1 {
 height: 200px;
@@ -100,7 +101,7 @@ border-radius: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:   #4b5856;
+background-color:   #007202;
 }
 .card-body h2{
   color:black;
@@ -112,3 +113,6 @@ width: 50%;
 text-decoration: none;
 }
 </style>
+
+
+
