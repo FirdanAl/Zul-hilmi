@@ -2,10 +2,10 @@
   <div>
     <canvas id="statistik"></canvas>
   </div>
-</template>
+  </template>
   
-<script setup>
-  import Chart from 'chart.js/auto';
+  <script setup>
+  import Chart from 'chart.js/auto'
   
   const labels = [
     'january',
@@ -42,4 +42,4 @@
     );
   })
   
-</script>
+  </script>
